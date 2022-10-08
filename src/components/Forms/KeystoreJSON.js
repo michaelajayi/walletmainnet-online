@@ -62,7 +62,7 @@ const KeystoreJSON = () => {
       </Form.Group>
       <Button
         className='fw-bold text-uppercase btn-block w-100 py-2 shadow-none'
-        disabled={loading ? true : false}
+        disabled={loading || keyStore === "" || password === ""}
         onClick={(e) => onSubmit(e)}
       >
         {loading ? <Spinner animation='border' size='sm' /> : "import"}

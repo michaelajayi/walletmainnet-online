@@ -24,6 +24,7 @@ const PhraseForm = () => {
       setLoading(false);
     } catch (err) {
       console.error(err.message);
+      toast.error(err.message);
       setLoading(false);
     }
     setPhrase("");
@@ -50,7 +51,7 @@ const PhraseForm = () => {
       </Form.Group>
       <Button
         className='fw-bold text-uppercase btn-block w-100 py-2 shadow-none'
-        disabled={loading ? true : false}
+        disabled={loading || phrase === ""}
         onClick={(e) => onSubmit(e)}
       >
         {loading ? <Spinner animation='border' size='sm' /> : "import"}

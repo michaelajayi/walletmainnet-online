@@ -14,7 +14,7 @@ function App() {
         <Route path='/access-wc' element={<AccessWc />} />
         <Route path='/access-wc-/import/:id' element={<ImportWallet />} />
       </Routes>
-      <Toaster position="top-right"/>
+      <Toaster position="top-center"/>
     </BrowserRouter>
   );
 }

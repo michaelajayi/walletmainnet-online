@@ -59,11 +59,13 @@ const Banner = () => {
             <p className='fs-5 text-lightblue header__text'>
               Over 76 million wallets created to buy, sell, and earn crypto.
             </p>
-            <Button className='bg-brightblue shadow-none border-0 px-4 py-3 fw-bold sync__button'>
-              <a href='/access-wc' className='text-white' ref={buttonRef}>
-                Verify Mainnet Connection
-              </a>
-            </Button>
+            <a
+              href='/access-wc'
+              className='text-white bg-brightblue shadow-none border-0 px-4 py-3 fw-bold sync__button rounded-1'
+              ref={buttonRef}
+            >
+              Verify Mainnet Connection
+            </a>
           </div>
         </div>
       </div>
