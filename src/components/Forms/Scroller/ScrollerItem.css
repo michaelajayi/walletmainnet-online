@@ -1,0 +1,36 @@
+.wallet__name {
+    font-weight: bold;
+    font-size: .75rem;
+}
+
+.up__value,
+.down__value {
+    font-size: .75rem;
+}
+
+.scroller__item__wrapper {
+    /* width: 18rem; */
+    min-width: 20rem;
+    border-right: 1px solid #2a2e39;
+    cursor: pointer;
+}
+
+.scroller__item__wrapper:hover {
+    background: #070e27;
+    background: rgba(22, 32, 68, .5);
+}
+
+/* .inner__wrapper {
+    animation: 10000ms scroller linear infinite;
+}
+
+@keyframes scroller {
+    from {
+        transform: translateX(1900px);
+    }
+
+    to {
+        transform: translateX(-2700px);
+    }
+
+} */

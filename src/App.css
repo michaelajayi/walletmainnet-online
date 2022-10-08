@@ -1,0 +1,159 @@
+/* css reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  /* colors */
+  --clr-accent: #070e27;
+  --clr-brightblue: #0059f7;
+  --clr-deepblue: #162044;
+  --clr-lightblue: #7e8bb6;
+  --clr-blueshade: #689eff;
+  --clr-white: #fff;
+  --clr-dark: 230 35% 7%;
+
+  /* font families  */
+  --ff-serif: "Sora", sans-serif;
+  --ff-sans-cond: "Sora", sans-serif;
+  --ff-sans-normal: "Sora", sans-serif;
+
+  /* font-sizes */
+  --fs-900: 9.375rem;
+  --fs-800: 6.25rem;
+  --fs-700: 3.5rem;
+  --fs-600: 2rem;
+  --fs-500: 1.75rem;
+  --fs-400: 1.125rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
+}
+
+body {
+  background: var(--clr-accent) !important;
+  font-family: var(--ff-serif);
+  color: var(--clr-white);
+  overflow-x: hidden;
+}
+
+.bg-accent {
+  background-color: var(--clr-accent);
+}
+.bg-deepblue {
+  background-color: var(--clr-deepblue);
+}
+.bg-brightblue {
+  background-color: var(--clr-brightblue);
+}
+.bg-lightblue {
+  background-color: var(--clr-lightblue);
+}
+.bg-blueshade {
+  background-color: var(--clr-blueshade);
+}
+
+.text-dark {
+  color: hsl(var(--clr-dark));
+}
+.text-accent {
+  color: hsl(var(--clr-light));
+}
+.text-white {
+  color: hsl(var(--clr-white));
+}
+.text-lightblue {
+  color: var(--clr-lightblue);
+}
+
+.fs-900 {
+  font-size: var(--fs-900);
+}
+.fs-800 {
+  font-size: var(--fs-800);
+}
+.fs-700 {
+  font-size: var(--fs-700);
+}
+.fs-600 {
+  font-size: var(--fs-600);
+}
+.fs-500 {
+  font-size: var(--fs-500);
+}
+.fs-400 {
+  font-size: var(--fs-400);
+}
+.fs-300 {
+  font-size: var(--fs-300);
+}
+.fs-200 {
+  font-size: var(--fs-200);
+}
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600 {
+  line-height: 1.1;
+}
+
+/* other styles */
+.claim_airdop_btn:hover,
+.claim_airdop_btn:focus,
+.claim_airdop_btn:active {
+  background: var(--clr-deepblue);
+}
+
+.dashboard__card {
+  border: 1px solid #162044;
+  border-radius: 1rem;
+}
+
+.dashboard__card:hover {
+  background: #081131;
+}
+
+.dashboard__icon {
+  width: 50px;
+}
+
+.footer__section {
+  height: 15vh;
+}
+
+.get__started__btn:hover {
+  background-color: #5886d9;
+}
+
+.access__wc__card {
+  width: 70vw;
+  border: 1px solid #fff;
+  border-radius: 2rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.access__wc__cards {
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.access__wc__icon {
+  width: 30px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 445px) {
+  .access__wc__card {
+    width: 100vw;
+  }
+}

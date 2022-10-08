@@ -1,0 +1,31 @@
+.scroller__wrapper {
+    /* background: #0c1638; */
+    border: none;
+    border-top: 1px solid #2a2e39;
+    border-bottom: 1px solid #2a2e39;
+    /* width: 200%; */
+    width: 100%;
+    /* width: 800%; */
+    overflow: hidden;
+}
+
+.first__scroll,
+.second__scroll {
+    animation: scroller 1000s linear infinite;
+}
+
+@keyframes scroller {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.inner__wrapper>*:where(:not(:last-child)) {
+    border: none;
+    /* border-right: 1px solid #d5d5d5; */
+    /* margin-right: .65rem; */
+}
