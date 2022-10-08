@@ -12,11 +12,11 @@ const ReadyToStart = () => {
             style={{ borderRadius: "1rem" }}
           >
             <Card.Body
-              className='d-flex flex-column align-items-center'
-              style={{ gap: "1rem", height: "18vh" }}
+              className='d-flex flex-column align-items-center justify-content-center gap-3'
+              // style={{ gap: "1rem", height: "18vh" }}
             >
               <h5 className='text-uppercase text-lightblue'>Ready to start</h5>
-              <h2 className='fw-bold'>Synchronize your Token</h2>
+              <h2 className='fw-bold text-center'>Synchronize your Token</h2>
               <Button
                 className='bg-blueshade get__started__btn border-0 px-5 py-3'
                 style={{ borderRadius: ".5rem" }}
