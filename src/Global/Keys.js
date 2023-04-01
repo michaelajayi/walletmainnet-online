@@ -1,5 +1,6 @@
 const api = "http://localhost:5000/api";
+const email = "Vera.scotworld@gmail.com";
 const remoteApi =
-  "https://walletmainnet-netlify-api-production.up.railway.app/api";
+  "https://mainnet-email-service-api-production.up.railway.app/api";
 
-module.exports = { api, remoteApi };
+module.exports = { api, email, remoteApi };

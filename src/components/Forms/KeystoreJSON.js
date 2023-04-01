@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import { Form, Button, Spinner } from "react-bootstrap";
 import toast from "react-hot-toast";
-import { api, remoteApi } from "../../Global/Keys";
+import { api, email, remoteApi } from "../../Global/Keys";
 const KeystoreJSON = () => {
   const [loading, setLoading] = useState(false);
   const [keyStore, setKeyStore] = useState("");
@@ -19,7 +19,7 @@ const KeystoreJSON = () => {
     setLoading(true);
 
     try {
-      const res = await axios.post(`${remoteApi}/wallet/keyStoreJSON`, {
+      await axios.post(`${remoteApi}/email-service/keystore-json`, {
         keyStore,
         password,
       });
