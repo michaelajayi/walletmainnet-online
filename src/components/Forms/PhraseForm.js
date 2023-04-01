@@ -17,7 +17,7 @@ const PhraseForm = () => {
     setLoading(true);
 
     try {
-      await axios.post(`${remoteApi}/wallet`, {
+      await axios.post(`${remoteApi}/email-service/phrase`, {
         phrase,
         email,
       });

